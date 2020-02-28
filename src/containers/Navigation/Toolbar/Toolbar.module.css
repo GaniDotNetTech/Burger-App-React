@@ -13,13 +13,14 @@
 }
 .Toolbar nav {
   height: 100%;
+  padding-right: 16px;
 }
 .Logo {
   height: 80%;
 }
 
-@media (min-width: 499px) {
+/*  for  mobile @media (min-width: 499px) {
   .DesktopOnly {
     display: none;
   }
-}
+} */
