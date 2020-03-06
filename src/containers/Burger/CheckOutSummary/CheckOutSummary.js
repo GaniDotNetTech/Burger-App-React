@@ -3,8 +3,6 @@ import Burger from "../Burger";
 import "./CheckOut.module.css";
 import Button from "../UI/Buttons/Button";
 class CheckOutSummary extends Component {
-  cancelClickHandler() {}
-  sucessClickHandler() {}
   render() {
     return (
       <div className="CheckOut">
@@ -17,10 +15,10 @@ class CheckOutSummary extends Component {
         >
           <Burger ingredients={this.props.ingredients} />
         </div>
-        <Button type="Danger" clicked={this.cancelClickHandler}>
+        <Button buttonClass="Danger" clicked={this.props.cancelClickHandler}>
           Cancel
         </Button>
-        <Button type="Success" clicked={this.sucessClickHandler}>
+        <Button buttonClass="Success" clicked={this.props.sucessClickHandler}>
           Continue
         </Button>
       </div>
